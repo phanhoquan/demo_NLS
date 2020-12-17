@@ -7,8 +7,7 @@ import HomeComponent from '../components/index';
 const mapStateToProps = state => {
   return {
     isProcessing: state.homeReducer.isProcessing,
-    listAccountManagement: state.homeReducer.listAccountManagement,
-    totalRows: state.homeReducer.totalRows
+    listAccountManagement: state.homeReducer.listAccountManagement
   };
 };
 

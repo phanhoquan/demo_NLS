@@ -12,8 +12,7 @@ export const { Types, Creators } = createActions({
 // Initial state
 export const INITIAL_STATE = Immutable({
   isProcessing: false,
-  listAccountManagement: [],
-  totalRows: 0
+  listAccountManagement: []
 });
 
 const getListUser = (state, action) => {
@@ -28,16 +27,14 @@ const getListUserSuccess = (state, action) => {
   return state.merge({
     isProcessing: false,
     type: action.type,
-    listAccountManagement: data,
-    totalRows: data.length || 0
+    listAccountManagement: data
   });
 };
 
 const getListUserFailed = (state, action) => {
   return state.merge({
     isProcessing: false,
-    type: action.type,
-    totalRows: 0
+    type: action.type
   });
 };
 
