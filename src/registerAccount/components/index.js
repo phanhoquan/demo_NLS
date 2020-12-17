@@ -74,7 +74,7 @@ const Signin = () => {
                   </div>
                   <div className="mt-3">
                     <PrimaryButton
-                      customClass="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn"
+                      className="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn"
                       onClick={() => {}}
                     >
                       SIGN UP

@@ -174,7 +174,7 @@ const Signin = ({
                   <div className="mb-2">
                     <PrimaryButton
                       type="button"
-                      customClass="btn btn-block btn-facebook auth-form-btn"
+                      className="btn btn-block btn-facebook auth-form-btn"
                       onClick={() => {}}
                     >
                       <i className="ti-facebook mr-2" />

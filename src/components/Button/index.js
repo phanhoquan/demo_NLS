@@ -9,7 +9,7 @@ type Props = {
   size?: string,
   variant?: string,
   type?: string,
-  customClass?: string,
+  className?: string,
   children: any
 };
 
@@ -19,7 +19,7 @@ export const PrimaryButton = ({
   variant = 'primary',
   type = 'button',
   size = 'sm',
-  customClass = '',
+  className = '',
   children
 }: Props) => {
   return (
@@ -29,7 +29,7 @@ export const PrimaryButton = ({
       size={size}
       disabled={disabled}
       onClick={onClick}
-      className={customClass}
+      className={className}
     >
       {children}
     </Button>
@@ -38,7 +38,7 @@ export const PrimaryButton = ({
 
 PrimaryButton.defaultProps = {
   disabled: false,
-  customClass: '',
+  className: '',
   size: 'sm',
   type: 'button',
   variant: 'primary'
