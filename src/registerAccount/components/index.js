@@ -2,12 +2,10 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import { API } from 'utils/Apis';
 import ROUTERS from 'constants/routers';
-// import { Types } from '../../redux';
 import PrimaryButton from 'components/Button';
 import Input from 'components/Input';
-import IMAGES from 'themes/images';
+import IMAGES from '../../themes/images';
 
 const Signin = () => {
   return (
@@ -67,15 +65,18 @@ const Signin = () => {
                   </div>
                   <div className="mb-4">
                     <div className="form-check">
-                      <label className="form-check-label text-muted">
-                        <input type="checkbox" className="form-check-input" />I
-                        agree to all Terms &amp; Conditions
+                      <div className="form-check-label text-muted">
+                        <input type="checkbox" className="form-check-input" />
+                        I agree to all TermsConditions
                         <i className="input-helper" />
-                      </label>
+                      </div>
                     </div>
                   </div>
                   <div className="mt-3">
-                    <PrimaryButton className="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn">
+                    <PrimaryButton
+                      customClass="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn"
+                      onClick={() => {}}
+                    >
                       SIGN UP
                     </PrimaryButton>
                   </div>

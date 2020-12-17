@@ -8,7 +8,13 @@ import Loading from 'components/Loading';
 type Props = {
   isProcessing: boolean,
   getListUser: Function,
-  listAccountManagement: Array<{}>
+  listAccountManagement: Array<{
+    avatar: string,
+    email: string,
+    id: number,
+    name: string,
+    phone: string
+  }>
 };
 
 const HomeComponent = ({
@@ -50,9 +56,9 @@ const HomeComponent = ({
   const handelSubmit = () => {
     const listFilter = listAccountManagement.filter(
       item =>
-        item.name.toLowerCase().includes(valueSearch) ||
-        item.phone.toLowerCase().includes(valueSearch) ||
-        item.email.toLowerCase().includes(valueSearch)
+        (item.name && item.name.toLowerCase().includes(valueSearch)) ||
+        (item.phone && item.phone.toLowerCase().includes(valueSearch)) ||
+        (item.email && item.email.toLowerCase().includes(valueSearch))
     );
     setTotalRows(listFilter.length);
     setListUser(listFilter.slice(0, limitPage));

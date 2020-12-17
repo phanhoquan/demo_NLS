@@ -3,11 +3,11 @@ import React, { useState, memo } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import ROUTERS from 'constants/routers';
-import { Creators } from '../../loginAccount/redux';
 import { Link } from 'react-router-dom';
 import { API } from 'utils/Apis';
 import Input from 'components/Input';
-import IMAGES from 'themes/images';
+import IMAGES from '../../themes/images';
+import { Creators } from '../../loginAccount/redux';
 
 type Props = {
   logOut: Function,
@@ -92,8 +92,10 @@ export const Header = ({
             >
               <div
                 className="dropdown-item"
-                to="/"
                 onClick={() => handleLogout()}
+                onKeyDown={() => {}}
+                role="button"
+                tabIndex={0}
               >
                 <i className="ti-power-off text-primary" />
                 Logout

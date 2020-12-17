@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom';
 import { API } from 'utils/Apis';
 import ROUTERS from 'constants/routers';
 import Loading from 'components/Loading';
-import { Types } from '../redux';
 import Input from 'components/Input';
 import PrimaryButton from 'components/Button';
-import IMAGES from 'themes/images';
+import IMAGES from '../../themes/images';
+import { Types } from '../redux';
 
 type Props = {
   type: string,
@@ -37,8 +37,8 @@ const Signin = ({
     isChecked: isCheckedBox || false
   });
   const [errorLogin, setErrorLogin] = useState({
-    textUsername: '',
-    textPassword: ''
+    username: '',
+    password: ''
   });
   /**
    * handle effect after login success
@@ -114,7 +114,7 @@ const Signin = ({
                 <div className="brand-logo">
                   <img src={IMAGES.iconLogo} alt="logo" />
                 </div>
-                <h4>{`Hello! let's get started`}</h4>
+                <h4>Hello! lets get started</h4>
                 <h6 className="font-weight-light">Sign in to continue.</h6>
                 <form className="pt-3">
                   <div className="form-group">
@@ -156,7 +156,7 @@ const Signin = ({
                   </div>
                   <div className="my-2 d-flex justify-content-between align-items-center">
                     <div className="form-check">
-                      <label className="form-check-label text-muted">
+                      <div className="form-check-label text-muted">
                         <input
                           type="checkbox"
                           checked={isChecked}
@@ -165,7 +165,7 @@ const Signin = ({
                         />
                         Keep me signed in
                         <i className="input-helper" />
-                      </label>
+                      </div>
                     </div>
                     <Link to="/" className="auth-link text-black">
                       Forgot password?
@@ -174,14 +174,15 @@ const Signin = ({
                   <div className="mb-2">
                     <PrimaryButton
                       type="button"
-                      className="btn btn-block btn-facebook auth-form-btn"
+                      customClass="btn btn-block btn-facebook auth-form-btn"
+                      onClick={() => {}}
                     >
                       <i className="ti-facebook mr-2" />
                       Connect using facebook
                     </PrimaryButton>
                   </div>
                   <div className="text-center mt-4 font-weight-light">
-                    {`Don't have an account?`}
+                    Dont have an account?
                     <Link to={ROUTERS.REGISTER} className="text-primary">
                       Create
                     </Link>
