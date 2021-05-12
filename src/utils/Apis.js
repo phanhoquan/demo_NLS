@@ -1,7 +1,5 @@
 // import libs
 import { create } from 'apisauce';
-// import App's config
-import AppConfig from 'config/appConfig';
 
 export const ROUTES = {
   // Auths
@@ -10,7 +8,7 @@ export const ROUTES = {
 };
 
 export const API = create({
-  baseURL: AppConfig.API_URL
+  baseURL: process.env.REACT_APP_API_URL
 });
 
 export const resetRequest = route => {

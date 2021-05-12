@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import { API } from 'utils/Apis';
 import Input from 'components/Input';
 import IMAGES from '../../themes/images';
-import { Creators } from '../../loginAccount/redux';
+import { Creators } from '../../pages/login/redux';
 
 type Props = {
   logOut: Function,

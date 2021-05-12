@@ -19,10 +19,22 @@
 /*-------------------------------------------------------------------*/
 /* === Template mixins === */
 @import "mixins/misc";
+@import "mixins/animation";
 @import "mixins/buttons";
 
 /*-------------------------------------------------------------------*/
+/* === Components === */
+
+@import "components/forms";
+@import "components/buttons";
+@import "components/checkbox-radio";
+@import "components/tables";
+@import "components/loading";
+
+
+/*-------------------------------------------------------------------*/
 /* === Core Styles === */
+@import "navbar";
 @import "reset";
 @import "fonts";
 @import "typography";

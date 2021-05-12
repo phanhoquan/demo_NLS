@@ -1,11 +1,11 @@
 import { all } from 'redux-saga/effects';
 
 /** login */
-import LoginSaga from 'loginAccount/sagas/LoginSaga';
+import LoginSaga from 'pages/login/sagas/LoginSaga';
 /**
  * Get list user
  */
-import getListUserSaga from 'home/sagas/getListUserSaga';
+import getListUserSaga from 'pages/home/sagas/getListUserSaga';
 
 export default function* RootSagas() {
   yield all([

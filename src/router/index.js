@@ -7,9 +7,9 @@ import PrivateRoute from 'utils/PrivateRoute';
 import ROUTERS from 'constants/routers';
 import { API } from 'utils/Apis';
 
-import SignInContainer from 'loginAccount/containers/SignInContainer';
-import RegisterContainer from 'registerAccount/containers/RegisterContainer';
-import HomeContainer from 'home/containers/homeContainer';
+import SignInContainer from 'pages/login/containers/SignInContainer';
+import RegisterContainer from 'pages/register/containers/RegisterContainer';
+import HomeContainer from 'pages/home/containers/homeContainer';
 
 type Props = {
   token: string

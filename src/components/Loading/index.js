@@ -1,19 +1,15 @@
 // @flow
 // libs
-import React, { memo } from 'react';
+import React from 'react';
 
-type Props = {
-  size?: string,
-  variant?: string
-};
-
-export const LoadingSmall = ({ size = 'sm', variant = 'warning' }: Props) => (
-  <div animation="border" variant={variant} size={size} />
+export const Loading = () => (
+  <div id="bars1">
+    <span />
+    <span />
+    <span />
+    <span />
+    <span />
+  </div>
 );
 
-LoadingSmall.defaultProps = {
-  size: 'sm',
-  variant: 'warning'
-};
-
-export default memo<Props>(LoadingSmall);
+export default Loading;

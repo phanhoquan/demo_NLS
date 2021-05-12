@@ -7,7 +7,7 @@ import ROUTERS from 'constants/routers';
 import Loading from 'components/Loading';
 import Input from 'components/Input';
 import PrimaryButton from 'components/Button';
-import IMAGES from '../../themes/images';
+import IMAGES from 'themes/images';
 import { Types } from '../redux';
 
 type Props = {
@@ -106,7 +106,7 @@ const Signin = ({
 
   return (
     <div className="container-scroller">
-      <div className="container-fluid page-body-wrapper full-page-wrapper">
+      <div className="container-fluid page-body-wrapper">
         <div className="content-wrapper d-flex align-items-center auth px-0">
           <div className="row w-100 mx-0">
             <div className="col-lg-4 mx-auto">

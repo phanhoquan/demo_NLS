@@ -107,12 +107,6 @@ const HomeComponent = ({
         ) : (
           <div className="card">
             <div className="card-body">
-              <h4 className="card-title">Striped Table</h4>
-              <p className="card-description">
-                Add class
-                <code>.table-striped</code>
-              </p>
-
               <div className="table-responsive">
                 <table className="table table-striped">
                   <thead>

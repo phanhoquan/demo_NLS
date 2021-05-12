@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
-import { registerReducer } from 'registerAccount/redux';
-import { homeReducer } from 'home/redux';
-import { accountReducer } from 'loginAccount/redux';
+import { registerReducer } from 'pages/register/redux';
+import { homeReducer } from 'pages/home/redux';
+import { accountReducer } from 'pages/login/redux';
 
 const appReducer = combineReducers({
   accountReducer,

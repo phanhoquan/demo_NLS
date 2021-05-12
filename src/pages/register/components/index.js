@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import ROUTERS from 'constants/routers';
 import PrimaryButton from 'components/Button';
 import Input from 'components/Input';
-import IMAGES from '../../themes/images';
+import IMAGES from '../../../themes/images';
 
 const Signin = () => {
   return (
