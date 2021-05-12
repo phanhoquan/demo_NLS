@@ -236,9 +236,7 @@ declare module 'react-router-dom/es/Switch.js' {
   declare module.exports: $Exports<'react-router-dom/es/Switch'>;
 }
 declare module 'react-router-dom/es/warnAboutDeprecatedESMImport.js' {
-  declare module.exports: $Exports<
-    'react-router-dom/es/warnAboutDeprecatedESMImport'
-  >;
+  declare module.exports: $Exports<'react-router-dom/es/warnAboutDeprecatedESMImport'>;
 }
 declare module 'react-router-dom/es/withRouter.js' {
   declare module.exports: $Exports<'react-router-dom/es/withRouter'>;
@@ -286,9 +284,7 @@ declare module 'react-router-dom/modules/NavLink.js' {
   declare module.exports: $Exports<'react-router-dom/modules/NavLink'>;
 }
 declare module 'react-router-dom/modules/utils/locationUtils.js' {
-  declare module.exports: $Exports<
-    'react-router-dom/modules/utils/locationUtils'
-  >;
+  declare module.exports: $Exports<'react-router-dom/modules/utils/locationUtils'>;
 }
 declare module 'react-router-dom/NavLink.js' {
   declare module.exports: $Exports<'react-router-dom/NavLink'>;
@@ -318,9 +314,7 @@ declare module 'react-router-dom/umd/react-router-dom.min.js' {
   declare module.exports: $Exports<'react-router-dom/umd/react-router-dom.min'>;
 }
 declare module 'react-router-dom/warnAboutDeprecatedCJSRequire.js' {
-  declare module.exports: $Exports<
-    'react-router-dom/warnAboutDeprecatedCJSRequire'
-  >;
+  declare module.exports: $Exports<'react-router-dom/warnAboutDeprecatedCJSRequire'>;
 }
 declare module 'react-router-dom/withRouter.js' {
   declare module.exports: $Exports<'react-router-dom/withRouter'>;

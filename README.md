@@ -27,14 +27,12 @@ API keys and other sensitive information are shared privately and stored in a .e
 Example file: `.env.sample`
 ```
 REACT_APP_API_URL=https://myapi.com
-REACT_APP_API_KEY=abc12345
 ```
 
 and access them from React app like so:
 
 ```
 process.env.REACT_APP_API_URL
-process.env.REACT_APP_API_KEY
 ```
 
 The `.env.[environment]` file is ignored by git keeping those secrets out of the repository.
@@ -114,10 +112,6 @@ A cascading style sheet (CSS) is a Web page derived from multiple sources with a
 **Flow**
 - Is a Static Type Checker for JavaScript.
 - Homepage: https://flow.org
-
-**Storybook**
-- Is an open source tool for developing UI components in isolation for React, Vue, and Angular. It makes building stunning UIs organized and efficient.
-- Homepage: https://storybook.js.org
 
 **React-router**
 - Declarative routing for React.

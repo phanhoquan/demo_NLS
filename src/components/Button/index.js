@@ -1,7 +1,6 @@
 // @flow
 // libs
 import React, { memo } from 'react';
-import { Button } from 'react-bootstrap';
 
 type Props = {
   onClick: Function,
@@ -23,7 +22,7 @@ export const PrimaryButton = ({
   children
 }: Props) => {
   return (
-    <Button
+    <button
       variant={variant}
       type={type}
       size={size}
@@ -32,7 +31,7 @@ export const PrimaryButton = ({
       className={className}
     >
       {children}
-    </Button>
+    </button>
   );
 };
 
@@ -44,4 +43,4 @@ PrimaryButton.defaultProps = {
   variant: 'primary'
 };
 
-export default memo<Props>(Button);
+export default memo<Props>(PrimaryButton);

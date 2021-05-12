@@ -1,7 +1,6 @@
 // @flow
 // libs
 import React, { memo } from 'react';
-import { Spinner } from 'react-bootstrap';
 
 type Props = {
   size?: string,
@@ -9,7 +8,7 @@ type Props = {
 };
 
 export const LoadingSmall = ({ size = 'sm', variant = 'warning' }: Props) => (
-  <Spinner animation="border" variant={variant} size={size} />
+  <div animation="border" variant={variant} size={size} />
 );
 
 LoadingSmall.defaultProps = {
