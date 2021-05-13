@@ -120,7 +120,7 @@ const Signin = ({
                   <div className="form-group">
                     <Input
                       type="text"
-                      id="exampleInputEmail1"
+                      id="username"
                       onChange={e => handelOnChange(e, 'username')}
                       customClassName={
                         errorLogin && errorLogin.username ? ' red' : ''
@@ -136,7 +136,7 @@ const Signin = ({
                       type="password"
                       value={password}
                       onChange={e => handelOnChange(e, 'password')}
-                      id="exampleInputPassword1"
+                      id="password"
                       placeholder="Password"
                       customClassName={
                         errorLogin && errorLogin.password ? ' red' : ''

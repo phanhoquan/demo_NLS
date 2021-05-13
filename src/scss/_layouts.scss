@@ -75,6 +75,11 @@
       border-right: 1px solid $cyan;
     }
 
+    &.disabled {
+      pointer-events: none;
+      cursor: not-allowed;
+    }
+
     &.active {
       a {
         text-decoration: underline;

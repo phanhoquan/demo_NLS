@@ -8,12 +8,11 @@ function* login(action) {
   try {
     /**
      * Example data
-     * url: enpoint/login
+     * url: login
      * params:
      *  {
-     *    username: 'Lorem'
-     *    password: 'Lorem',
-     *    isRemeberMe: true | false,
+     *    username: 'admin'
+     *    password: 'admin',
      *  }
      *
      */

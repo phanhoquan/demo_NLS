@@ -1,5 +1,5 @@
 const ROUTERS = {
-  ROOT: `/`,
+  ROOT: `/list-user`,
   LOGIN: `/login`,
   REGISTER: `/register`
 };

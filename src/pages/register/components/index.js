@@ -28,7 +28,7 @@ const Signin = () => {
                       type="text"
                       value=""
                       onChange={() => {}}
-                      id="exampleInputUsername1"
+                      id="inputUsername"
                       placeholder="Username"
                     />
                   </div>
@@ -44,7 +44,7 @@ const Signin = () => {
                   <div className="form-group">
                     <select
                       className="form-control form-control-lg"
-                      id="exampleFormControlSelect2"
+                      id="formControlSelect"
                     >
                       <option>Country</option>
                       <option>United States of America</option>
@@ -59,7 +59,7 @@ const Signin = () => {
                       value=""
                       onChange={() => {}}
                       type="password"
-                      id="exampleInputPassword1"
+                      id="inputPassword"
                       placeholder="Password"
                     />
                   </div>
@@ -91,9 +91,7 @@ const Signin = () => {
             </div>
           </div>
         </div>
-        {/* content-wrapper ends */}
       </div>
-      {/* page-body-wrapper ends */}
     </div>
   );
 };
