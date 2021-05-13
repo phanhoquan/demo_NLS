@@ -7,7 +7,7 @@ function* login(action) {
   const { username, password, isChecked } = action.loginInfo;
   try {
     /**
-     * Example data
+     * Login API
      * url: login
      * params:
      *  {

@@ -20,7 +20,8 @@ type Props = {
   inputMode?: string,
   onMouseLeave?: Function,
   maxLength?: string,
-  errorMsg?: string
+  errorMsg?: string,
+  required?: boolean
 };
 
 const Input = ({
@@ -41,7 +42,8 @@ const Input = ({
   inputMode = '',
   onMouseLeave,
   maxLength = '',
-  errorMsg = ''
+  errorMsg = '',
+  required
 }: Props) => {
   return (
     <div
@@ -65,6 +67,7 @@ const Input = ({
         pattern={pattern}
         inputMode={inputMode}
         maxLength={maxLength}
+        required={required}
         onBlur={e => onBlur && onBlur(e)}
         onFocus={e => onFocus && onFocus(e)}
         onChange={e => onChange && onChange(e.target.value)}
@@ -94,7 +97,8 @@ Input.defaultProps = {
   pattern: '',
   inputMode: '',
   maxLength: '',
-  onMouseLeave: null
+  onMouseLeave: null,
+  required: false
 };
 
 export default Input;

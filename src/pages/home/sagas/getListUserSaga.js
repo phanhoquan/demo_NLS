@@ -6,14 +6,8 @@ import { Types } from '../redux';
 function* getListUser() {
   try {
     /**
-     * Example data
-     * url: enpoint/getListUser
-     * params:
-     *  {
-     *    username: 'Lorem'
-     *    password: 'Lorem',
-     *    isRemeberMe: true | false,
-     *  }
+     * List user API
+     * url: /users
      *
      */
     const response = yield call(() => API.get(ROUTES.API_LIST_USER));

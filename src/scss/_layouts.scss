@@ -77,7 +77,10 @@
 
     &.disabled {
       pointer-events: none;
-      cursor: not-allowed;
+
+      a {
+        cursor: not-allowed;
+      }
     }
 
     &.active {

@@ -6,6 +6,7 @@ import { API } from 'utils/Apis';
 import ROUTERS from 'constants/routers';
 import Loading from 'components/Loading';
 import Input from 'components/Input';
+import CheckBox from 'components/CheckBox';
 import PrimaryButton from 'components/Button';
 import IMAGES from 'themes/images';
 import { Types } from '../redux';
@@ -97,13 +98,6 @@ const Signin = ({
     }
   };
 
-  const handelOnChecked = () => {
-    setParamsLogin({
-      ...paramsLogin,
-      isChecked: !isChecked
-    });
-  };
-
   return (
     <div className="container-scroller">
       <div className="container-fluid page-body-wrapper">
@@ -156,15 +150,19 @@ const Signin = ({
                   </div>
                   <div className="my-2 d-flex justify-content-between align-items-center">
                     <div className="form-check">
-                      <div className="form-check-label text-muted">
-                        <input
-                          type="checkbox"
-                          checked={isChecked}
-                          className="form-check-input"
-                          onChange={() => handelOnChecked()}
+                      <div className="form-check-label text-muted ml-0">
+                        <CheckBox
+                          name="checkInput"
+                          isChecked={isChecked}
+                          label="Keep me signed in"
+                          id="checkInput"
+                          handleToggleCheckbox={() =>
+                            setParamsLogin({
+                              ...paramsLogin,
+                              isChecked: !isChecked
+                            })
+                          }
                         />
-                        Keep me signed in
-                        <i className="input-helper" />
                       </div>
                     </div>
                     <Link to="/" className="auth-link text-black">
@@ -192,9 +190,7 @@ const Signin = ({
             </div>
           </div>
         </div>
-        {/* content-wrapper ends */}
       </div>
-      {/* page-body-wrapper ends */}
     </div>
   );
 };
